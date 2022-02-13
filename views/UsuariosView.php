@@ -25,7 +25,22 @@
           <li class="breadcrumb-item active" aria-current="page">Lista Usuarios</li>
         </ol>
       </nav>
-
+        <?php
+          if(isset($correcto)){
+              echo '<div class="alert alert-success text-center" role="alert">';
+              echo $correcto;
+              echo '</div>';
+            }
+          if(isset($respuesta)){
+              echo '<div class="alert alert-danger text-center" role="alert">';
+              echo $respuesta;
+              echo '</div>';
+            }
+          unset($correcto,$respuesta);
+        ?>
+          
+          
+      
       <div class="row">
         <div class="col-md-12">
           <a type="button" href="usuarios.php?c=Insertar_Usuario"  class="btn btn-success"><i class="fas fa-user-plus"></i> Nuevo usuario</a>
@@ -68,56 +83,8 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <!-- Page Content -->
-    <section class="py-5 footer">
-      <!-- <hr> -->
-      <div class="container">
-        <!-- Footer Text -->
-        <div class="container-fluid text-center text-md-left">
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-              <!-- Content -->
-              <img src="img/logo-banco.png" alt="logo" />
-            </div>
-            <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none pb-3" />
-            <!-- Grid column -->
-            <div class="col-md-6 mb-md-0 mb-3">
-              <!-- Content -->
-              <nav
-                class="navbar navbar-expand-lg justify-content-center"
-                id="footer-nav"
-              >
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-        <!-- Footer Text -->
-        <hr class="clearfix w-100 d-md-none pb-3" />
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-          © 2022 Copyright | <span class="footer-text">E-Bank</span>
-        </div>
-      </div>
-    </section>
+    <?php
+      require_once('views/footerView.php');
+    ?>
   </body>
 </html>

@@ -5,6 +5,7 @@
         private $db;
         private $usuarios;
         public $error;
+        public $sqlresp;
 
         public function __construct()
         {
@@ -23,13 +24,13 @@
         }
 
         public function Insertar_Usuario(Usuario $usuario){
-            $sql = "INSERT INTO users (Name, Lastname, Cellphone, Email, User_type, Amount, Registration_date) VALUES ('$usuario->nombre ','$usuario->apellido','$usuario->telefono','$usuario->mail','$usuario->tipo','$usuario->monto','$usuario->fecha')";
+            $sql = "INSERT INTO users (Name, Lastname, Cellphone, Email, User_type, Amount, Registration_date) VALUES ('$usuario->nombre ','$usuario->apellido','$usuario->telefono','$usuario->mail','$usuario->tipo',$usuario->monto,'$usuario->fecha')";
             $consulta = $this->db->query($sql);
            if (!$consulta) {
-               $this->error = "Error: No se ingresaron los datos.";
-           }/* else {
-               $this->error = $sql;
-           } */
+               $this->error = "Error: No se ingresaron los datos.".$usuario->monto;
+           } else {
+               $this->sqlresp = "Se insertaron los datos del usuario correctamente";
+           } 
            
         }
     
@@ -38,6 +39,8 @@
             $consulta = $this->db->query($sql);
             if (!$consulta) {
                 $this->error = "Error: No se ingresaron los datos.";
+            }else{
+                $this->sqlresp = "Se a editado el usuario correctamente";
             }
         }
 
@@ -55,6 +58,8 @@
             $consulta =  $this->db->query($sql);
             if (!$consulta) {
                 $this->error = "Error: No se eliminaron los datos.";
+            }else{
+                $this->sqlresp="El usuario fue eliminado correctamente!";
             }
         }
 
@@ -100,8 +105,13 @@
             $this->tipo = $tipo;
         }
 
-        public function set_monto(string $monto){
-            $this->monto = $monto;
+        public function set_monto($monto){
+            if(is_numeric($monto)){
+                $this->monto = $monto;
+            }else{
+                $this->error[] = "*Error: Debe ser un valor numerico";
+            }
+            
         }
 
         public function set_fecha(string $fecha){
