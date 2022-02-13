@@ -22,13 +22,14 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb separador">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+          <li class="breadcrumb-item active" aria-current="page">Lista Usuarios</li>
         </ol>
       </nav>
 
       <div class="row">
         <div class="col-md-12">
-          <button type="button" class="btn btn-success">Nuevo usuario</button>
+          <a type="button" href="usuarios.php?c=Insertar_Usuario"  class="btn btn-success"><i class="fas fa-user-plus"></i> Nuevo usuario</a>
+          <br>
           <br>
           <table class="table table-bordered">
             <thead class="text-center">
@@ -50,16 +51,15 @@
                   echo "<td class='text-center'>".$dato['Cellphone'] ."</td>";
                   echo "<td class='text-center'>".$dato['Email'] ."</td>";
                   echo "<td class='text-center'>".$dato['User_type'] ."</td>";
-                  echo "<td class='text-center'>".$dato['Amount'] ."</td>";
+                  echo "<td class='text-center'>$".$dato['Amount'] ."</td>";
                   echo "<td class='text-center'>".$dato['Registration_date'] ."</td>";
                   echo "<td class='text-center'>";
-                  echo "<a href='?c=Editar_Usuario&id=".$dato['Id_user']."' class='btn btn-primary'>Editar</a> \t";
-                  echo "<button type='button' class='btn btn-danger'>Eliminar</button>";
+                  echo "<a href='?c=Buscar_Usuario&id=".$dato['Id_user']."' class='btn btn-primary'><i class='fas fa-user-edit'></i> Editar</a> \t";
+                  echo "<a href='?c=Eliminar_Usuario&id=".$dato['Id_user']."' type='button' class='btn btn-danger'><i class='fas fa-user-minus'></i> Eliminar</a>";
                   echo "</td>";
                   echo "</tr>";
-
-                  
                 }
+                unset($datos, $dato);
               ?>
               
             </tbody>
@@ -80,7 +80,7 @@
             <!-- Grid column -->
             <div class="col-md-6 mt-md-0 mt-3">
               <!-- Content -->
-              <img src="img/clothing-store-logo-footer.png" alt="logo" />
+              <img src="img/logo-banco.png" alt="logo" />
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none pb-3" />
@@ -115,7 +115,7 @@
         <hr class="clearfix w-100 d-md-none pb-3" />
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-          © 2020 Copyright | <span class="footer-text">Clothing Store</span>
+          © 2022 Copyright | <span class="footer-text">E-Bank</span>
         </div>
       </div>
     </section>

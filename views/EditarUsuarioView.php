@@ -22,55 +22,96 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb separador">
               <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+              <li class="breadcrumb-item active" aria-current="page">Editar Usuario</li>
             </ol>
         </nav>
-
-        <form class="needs-validation" novalidate>
+        <?php
+            foreach ($datos as $dato) {
+                
+            
+        ?>
+        <form class="needs-validation" method="POST" action="usuarios.php?c=Editar_Usuario&id=<?php echo $id; ?>">
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="validationCustom01">Nombres</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <input type="text" class="form-control" name="nombre" value="<?php echo $dato['Name']; ?>" id="validationCustom01"  placeholder="Nombre" required>
                     <div class="valid-feedback">
                         Correcto!
                     </div>
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="validationCustom02">Apellidos</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <input type="text" class="form-control" name="apellido" value="<?php echo $dato['Lastname']; ?>" id="validationCustom02"  placeholder="Apellido" required>
                     <div class="valid-feedback">
                         Correcto!
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="validationCustom03">Telefono</label>
+                    <input type="text" class="form-control" name="telefono" value="<?php echo $dato['Cellphone']; ?>" id="validationCustom03"  placeholder="Telefono" required>
+                    <div class="valid-feedback">
+                        Correcto!
                     </div>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Porfavor ingrese su correo electrónico.
-                    </div>
-                  </div>
-            </div>
-            <div class="form-group">
-                <label for="">Mensaje</label>
-                <textarea class="form-control" id="" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Acepta los términos y condiciones
-                  </label>
-                  <div class="invalid-feedback">
-                    Debes estar de acuerdo antes de enviar.
-                  </div>
                 </div>
-              </div>
+                <div class="form-group col-md-4">
+                    <label for="validationCustom04">Correo</label>
+                    <input type="text" class="form-control" name="email" value="<?php echo $dato['Email']; ?>" id="validationCustom04"  placeholder="ejemplo@ejemplo.com" required>
+                    <div class="valid-feedback">
+                        Correcto!
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="validationCustom05">Tipo Usuario</label>
+                    <input type="text" class="form-control" name="tipo" value="<?php echo $dato['User_type']; ?>" id="validationCustom05"  placeholder="Tipo Usuario" required>
+                    <div class="valid-feedback">
+                        Correcto!
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="validationCustom06">Monto</label>
+                    <input type="text" class="form-control" name="monto" value="<?php echo $dato['Amount']; ?>" id="validationCustom06"  placeholder="$0.00" required>
+                    <div class="valid-feedback">
+                        Correcto!
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="validationCustom07">Fecha</label>
+                    <input type="date" class="form-control" name="fecha" value="<?php echo $dato['Registration_date']; ?>" id="validationCustom07"  required>
+                    <div class="valid-feedback">
+                        Correcto!
+                    </div>
+                </div>
+            </div>
             <button class="btn btn-outline-info" type="submit">Enviar</button>
         </form>
+        <?php
+            }
+        ?>
+        <br><br>
+        <div class="col-md-8">
+                <?php
+                    if (isset($respuesta)) {
+                        echo '<div class="alert alert-danger text-center" role="alert">';
+                        if (gettype($respuesta) == 'array') {
+                            foreach ($respuesta as $valor) {
+                                echo $valor. "\n <br>" ;
+                            }
+                            unset($valor);
+                            unset($respuesta);
+                        }else {
+                            echo  $respuesta;
+                        }
+                        echo '</div>';
+                    }
+                    
+                ?>
+            
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -85,7 +126,7 @@
                     <!-- Grid column -->
                     <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Content -->
-                        <img src="img/clothing-store-logo-footer.png" alt="logo">
+                        <img src="img/logo-banco.png" alt="logo">
                     </div>
                     <!-- Grid column -->
                     <hr class="clearfix w-100 d-md-none pb-3">
@@ -116,7 +157,7 @@
             <!-- Footer Text -->
             <hr class="clearfix w-100 d-md-none pb-3">
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright | <span class="footer-text">Clothing Store</span></div>
+            <div class="footer-copyright text-center py-3">© 2022 Copyright | <span class="footer-text">E-Bank</span></div>
         </div>
     </section>
     <!-- Validacion de formulario -->

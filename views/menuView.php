@@ -3,9 +3,10 @@
       <!-- Se muestra solo en pantallas pequeñas a la izquierda del menu -->
       <div class="d-block d-sm-none d-sm-block d-md-block d-lg-none">
         <img
-          src="img/clothing-store-logo5.png"
+          src="img/logo-banco.png"
           class="d-inline-block align-top"
           alt="logo"
+          width="100px" height="50px"
         />
       </div>
 
@@ -30,12 +31,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="usuarios.php?c=Listar_Usuario"
-              ><i class="fas fa-tshirt"></i> Usuarios</a
+              ><i class="fas fa-duotone fa-users"></i> Usuarios</a
             >
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="usuarios.php?c=Insertar_Usuario"
-              ><i class="fas fa-shopping-cart"></i> Insertar Usuario</a
+              ><i class="fas fa-sólido fa-plus"></i> Insertar Usuario</a
             >
           </li>
         </ul>
@@ -44,9 +45,10 @@
         <div class="d-none d-lg-block">
           <a class="navbar-brand" href="index.html">
             <img
-              src="img/clothing-store-logo5.png"
+              src="img/logo-banco.png"
               class="d-inline-block align-top"
               alt="logo"
+              width="150px" height="70px"
             />
           </a>
         </div>
