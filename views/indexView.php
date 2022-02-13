@@ -55,7 +55,7 @@
         <div class="carousel-inner" role="listbox">
           <div
             class="carousel-item active"
-            style="background-image: url(img/slide-01.jpg)"
+            style="background-image: url(img/slide-04.jpg)"
           >
             <div class="carousel-caption d-none d-md-block">
               <div class="container" id="texto-slider">
@@ -236,180 +236,14 @@
       </div>
     </div>
     <!-- CONTENIDO DE INDEX -->
-    <div class="container py-5">
+    <!-- div class="container py-5">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+          
         </ol>
       </nav>
-
-      <div>
-        <h3 class="tema-index">PRODUCTOS NUEVOS</h3>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4" id="1">
-          <div class="card mb-4 shadow-sm">
-            <img
-              src="img/product-11.jpg"
-              class="card-img-top imagen"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title titulo">Herschel supply</h5>
-              <p class="card-text precio">$63.16</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-sm enlace"
-                    value="1"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-xl"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" id="2">
-          <div class="card mb-4 shadow-sm">
-            <img
-              src="img/product-12.jpg"
-              class="card-img-top imagen"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title titulo">Herschel supply</h5>
-              <p class="card-text precio">$63.15</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-sm enlace"
-                    value="2"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-xl"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" id="3">
-          <div class="card mb-4 shadow-sm">
-            <img
-              src="img/product-13.jpg"
-              class="card-img-top imagen"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title titulo">T-Shirt with Sleeve</h5>
-              <p class="card-text precio">$18.49</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-sm enlace"
-                    value="3"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-xl"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" id="4">
-          <div class="card mb-4 shadow-sm">
-            <img
-              src="img/product-14.jpg"
-              class="card-img-top imagen"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title titulo">Pretty Little Thing</h5>
-              <p class="card-text precio">$54.79</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-sm enlace"
-                    value="4"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-xl"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" id="5">
-          <div class="card mb-4 shadow-sm">
-            <img
-              src="img/product-15.jpg"
-              class="card-img-top imagen"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title titulo">Mini Silver Mesh Watch</h5>
-              <p class="card-text precio">$86.85</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-sm enlace"
-                    value="5"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-xl"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" id="6">
-          <div class="card mb-4 shadow-sm">
-            <img
-              src="img/product-16.jpg"
-              class="card-img-top imagen"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title titulo">Square Neck Back</h5>
-              <p class="card-text precio">$29.64</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-sm enlace"
-                    value="6"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-xl"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> -->
     <script src="js/modal.js"></script>
     <!-- FOOTER -->
     <!-- Page Content -->
@@ -423,7 +257,7 @@
             <!-- Grid column -->
             <div class="col-md-6 mt-md-0 mt-3">
               <!-- Content -->
-              <img src="img/clothing-store-logo-footer.png" alt="logo" />
+              <img src="img/logo-banco.png" alt="logo" />
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none pb-3" />
@@ -458,7 +292,7 @@
         <hr class="clearfix w-100 d-md-none pb-3" />
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-          © 2020 Copyright | <span class="footer-text">Clothing Store</span>
+          © 2022 Copyright | <span class="footer-text">E-Bank</span>
         </div>
       </div>
     </section>
