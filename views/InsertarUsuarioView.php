@@ -43,7 +43,15 @@
                     </div>
                 </div>
             </div>
+            
             <div class="form-group">
+                <div class="form-group col-md-6">
+                    <label for="validationCustom03">Telefono</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                        Correcto!
+                    </div>
+                </div>
                 <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -54,21 +62,6 @@
                     </div>
                   </div>
             </div>
-            <div class="form-group">
-                <label for="">Mensaje</label>
-                <textarea class="form-control" id="" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Acepta los términos y condiciones
-                  </label>
-                  <div class="invalid-feedback">
-                    Debes estar de acuerdo antes de enviar.
-                  </div>
-                </div>
-              </div>
             <button class="btn btn-outline-info" type="submit">Enviar</button>
         </form>
     </div>
