@@ -54,12 +54,12 @@
         </div>
         <ul class="navbar-nav ml-auto" id="nav-principal">
           <li class="nav-item">
-            <a class="nav-link" href="nosotros.html"
+            <a class="nav-link" href="nosotros.php"
               ><i class="fas fa-book"></i> Nosotros</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html"
+            <a class="nav-link" href="contacto.php"
               ><i class="fas fa-envelope"></i> Contacto</a
             >
           </li>

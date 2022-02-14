@@ -21,7 +21,8 @@
     <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb separador">
-              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="index.php">index</a></li>  
+              <li class="breadcrumb-item"><a href="usuarios.php?c=Listar_Usuario">Lista Usuarios</a></li>
               <li class="breadcrumb-item active" aria-current="page">Editar Usuario</li>
             </ol>
         </nav>
@@ -74,7 +75,7 @@
                 </div>
                 <div class="form-group col-md-2">
                     <label for="validationCustom06">Monto</label>
-                    <input type="text" class="form-control" name="monto" value="<?php echo $dato['Amount']; ?>" id="validationCustom06"  placeholder="$0.00" required>
+                    <input type="number" class="form-control" name="monto" value="<?php echo $dato['Amount']; ?>" id="validationCustom06"  placeholder="$0.00" required>
                     <div class="valid-feedback">
                         Correcto!
                     </div>
@@ -114,53 +115,9 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <!-- Page Content -->
-    <section class="py-5 footer">
-        <!-- <hr> -->
-        <div class="container">
-            <!-- Footer Text -->
-            <div class="container-fluid text-center text-md-left">
-                <!-- Grid row -->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
-                        <!-- Content -->
-                        <img src="img/logo-banco.png" alt="logo">
-                    </div>
-                    <!-- Grid column -->
-                    <hr class="clearfix w-100 d-md-none pb-3">
-                    <!-- Grid column -->
-                    <div class="col-md-6 mb-md-0 mb-3">
-                    <!-- Content -->
-                        <nav class="navbar navbar-expand-lg justify-content-center" id="footer-nav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-            </div>
-            <!-- Footer Text -->
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2022 Copyright | <span class="footer-text">E-Bank</span></div>
-        </div>
-    </section>
-    <!-- Validacion de formulario -->
+    <?php
+      require_once('views/footerView.php');
+    ?>
     <script src="js/validationform.js"></script>
 </body>
 </html>
