@@ -21,7 +21,7 @@
     <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb separador">
-              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
               <li class="breadcrumb-item active" aria-current="page">Agregar Usuario</li>
             </ol>
         </nav>

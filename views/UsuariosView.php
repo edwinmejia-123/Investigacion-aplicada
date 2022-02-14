@@ -21,7 +21,7 @@
     <div class="container py-5">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb separador">
-          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
           <li class="breadcrumb-item active" aria-current="page">Lista Usuarios</li>
         </ol>
       </nav>
@@ -55,7 +55,7 @@
                 <th scope="col">Tipo de usuario</th>
                 <th scope="col">Monto</th>
                 <th scope="col">Fecha de registro</th>
-                <th scope="col">Acciones</th>
+                <th scope="col" colspan="2">Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -69,8 +69,10 @@
                   echo "<td class='text-center'>$".$dato['Amount'] ."</td>";
                   echo "<td class='text-center'>".$dato['Registration_date'] ."</td>";
                   echo "<td class='text-center'>";
-                  echo "<a href='?c=Buscar_Usuario&id=".$dato['Id_user']."' class='btn btn-primary'><i class='fas fa-user-edit'></i> Editar</a> \t";
-                  echo "<a href='?c=Eliminar_Usuario&id=".$dato['Id_user']."' type='button' class='btn btn-danger'><i class='fas fa-user-minus'></i> Eliminar</a>";
+                  echo "<a href='?c=Buscar_Usuario&id=".$dato['Id_user']."' class='btn btn-primary'><i class='fas fa-user-edit'></i></a> \n\t";
+                  echo "</td>";
+                  echo "<td class='text-center'>";
+                  echo "\t<a href='?c=Eliminar_Usuario&id=".$dato['Id_user']."' type='button' class='btn btn-danger'><i class='fas fa-user-minus'></i> </a>";
                   echo "</td>";
                   echo "</tr>";
                 }

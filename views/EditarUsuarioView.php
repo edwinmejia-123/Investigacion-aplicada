@@ -21,7 +21,8 @@
     <div class="container py-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb separador">
-              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="index.php">index</a></li>  
+              <li class="breadcrumb-item"><a href="usuarios.php?c=Listar_Usuario">Lista Usuarios</a></li>
               <li class="breadcrumb-item active" aria-current="page">Editar Usuario</li>
             </ol>
         </nav>
