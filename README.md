@@ -4,7 +4,7 @@ _CRUD a una base de datos, por medio de una estructura MVC con php puro. Permite
 
 ## Requisitos
 
-Es necesesario tener un servidor web local para la utilizacion del sistema, tambien tener activo el gestor de base de datos con la base de datos adjunta, insentarla con el nombre **Investigacion** _Recomendado sino es necesario cambiar las configuraciones del archivo **conexion**_.
+Es necesesario tener un servidor web local para la utilización del sistema, tambiín tener activo el gestor de base de datos con la base de datos adjunta, insentarla con el nombre **Investigacion** _(Recomendado), sino es necesario cambiar las configuraciones del archivo **conexion**_.
 
 ## Materia
 
